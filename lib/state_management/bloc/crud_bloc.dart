@@ -4,7 +4,6 @@ import 'package:crud_app/data/model/product.dart';
 import 'package:crud_app/data/repositories/repository.dart';
 import 'package:equatable/equatable.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 part 'crud_event.dart';
 part 'crud_state.dart';
@@ -22,14 +21,14 @@ class CrudBloc extends Bloc<CrudEvent, CrudState> {
           emit(CrudUpdateState(products: products));
           Get.snackbar(
             'Product Added Successfully',
-            'This is product has been added',
+            'This product has been added',
             snackPosition: SnackPosition.BOTTOM,
             duration: Duration(seconds: 5),
           );
         }else{
           Get.snackbar(
             'Product Added Failed',
-            'This is product has not been added',
+            'This product has not been added',
             snackPosition: SnackPosition.BOTTOM,
             duration: Duration(seconds: 5),
           );
@@ -67,7 +66,7 @@ class CrudBloc extends Bloc<CrudEvent, CrudState> {
           emit(CrudUpdateState(products: products));
           Get.snackbar(
             'Product Updated Successfully',
-            'This is product has been updated',
+            'This product has been updated',
             snackPosition: SnackPosition.BOTTOM,
             duration: Duration(seconds: 5),
           );
@@ -91,7 +90,7 @@ class CrudBloc extends Bloc<CrudEvent, CrudState> {
           emit(CrudUpdateState(products: products));
           Get.snackbar(
             'Product Deleted Successfully',
-            'This is product has been deleted',
+            'This product has been deleted',
             snackPosition: SnackPosition.BOTTOM,
             duration: Duration(seconds: 5),
           );
