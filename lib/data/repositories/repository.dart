@@ -35,7 +35,9 @@ class Repository {
       return true;
     } else {
       throw Exception('Failed to create product');
+
     }
+
   }
   Future<bool> updateProduct(Product product) async {
 
