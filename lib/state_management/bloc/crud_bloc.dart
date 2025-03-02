@@ -1,14 +1,14 @@
 import 'package:bloc/bloc.dart';
-import 'package:crud_app/data/api/fetch_product.dart';
 
 import 'package:crud_app/data/model/product.dart';
+import 'package:crud_app/data/repositories/fetch_product.dart';
 import 'package:equatable/equatable.dart';
 
 part 'crud_event.dart';
 part 'crud_state.dart';
 
 class CrudBloc extends Bloc<CrudEvent, CrudState> {
-  final Api api ;
+  final Repository api ;
   CrudBloc(this.api) : super(CrudInitialState()) {
     on<AddProductEvent>((event, emit) async {
       try {

@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:crud_app/core/utils/urls.dart';
 import 'package:crud_app/data/model/product.dart';
 import 'package:http/http.dart' as http;
-class Api {
+class Repository {
   Future<List<Product>> fetchProducts() async {
     final response = await http.get(Uri.parse(Urls.readProduct));
 
