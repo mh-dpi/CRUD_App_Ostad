@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 
 import 'package:crud_app/data/model/product.dart';
-import 'package:crud_app/data/repositories/fetch_product.dart';
+import 'package:crud_app/data/repositories/repository.dart';
 import 'package:equatable/equatable.dart';
 
 part 'crud_event.dart';
